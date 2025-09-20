@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // Use the webhook routes
-app.use('/webhook', webhookRouter);
+app.use('/', webhookRouter);
 
 // Start the server
 app.listen(PORT, () => {
