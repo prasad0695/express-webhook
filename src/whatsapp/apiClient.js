@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 const WHATSAPP_API_URL = 'https://graph.facebook.com/v22.0/702297236311200/messages';
-const ACCESS_TOKEN = 'EAAKUeswZCmFEBPWD4KeEpcQw3Otl1kHvpdJX0eQnp68Cm71peRjDTIVhLtMsHh6lZBZBTUOjCvmPHUUPT9wUZAF3tD2p9zONuZBBbZC6m3rrNGklSYqjbaLnZBQmFaTaUCfmttoqt4wIxlMENuaAAKQ1w9d7ZAiXXDMoNkweHjOBPuBXePzy29uJ4bks1dZBp6wdQWnforrZCMKoGqtmVT5mFpCNfNWoxqS6G11gHMb5KMKcwZD';
+const ACCESS_TOKEN = process.env.WHATSAPP_ACCESS_TOKEN;
 
 async function sendMessage1(recipientId, message) {
   try {

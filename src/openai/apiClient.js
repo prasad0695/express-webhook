@@ -2,7 +2,7 @@
 
 const OpenAI = require('openai');
 
-const client = new OpenAI({ apiKey: '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' });
+const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 // ---- Conversation Memory ----
 const conversationHistory = {}; // { userId: [ { role, content } ] }
